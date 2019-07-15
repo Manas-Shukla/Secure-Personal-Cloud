@@ -1,0 +1,112 @@
+.\" Manpage for SPC.
+.\" Contact mohitmailac@gmail.com to correct errors or typos.
+.TH man 8 "21 November 2018" "1.0" "SPC man page"
+
+.SH NAME
+spc \- Secure Personal Cloud 
+
+.SH SYNOPSIS
+spc [OPTIONS] ..
+
+.SH DESCRIPTION
+This manual page documents the GNU version of spc client.
+.PP
+Secure Personal Cloud is a cloud based file system like dropbox. The difference being that here, user has complete control over encryption schema of data that is uploaded to the server.
+
+*******************************************************************
+.SH OPTIONS/EXAMPLES
+
+.TP \w'man\ 'u
+.B spc help
+Getting help with the 
+.I options
+So that you don't have look into the manaual everytime :)
+
+
+.TP
+
+\fBspc server \fIset-url \fB[URL]
+Allows to set url for the server.
+
+.TP
+
+\fBspc server \fIinfo
+Prints information about the server.
+
+.TP
+
+
+\fBspc client \fIsign_up
+Allows the new clients to register.
+
+.TP
+
+
+\fBspc client \fIreset_password
+Allows the existing clients to change their password.
+
+.TP
+
+
+\fBspc client \fIlogin
+Allows the registered clients to login.
+
+.TP
+
+
+\fBspc client \fIlogout
+Allows logged in clients to log out.
+
+.TP
+
+
+\fBspc client \fIedit
+Logs out current client and logs in new client.
+
+.TP
+
+
+\fBspc observe \fB[DIR/FILE PATH]
+Stores a json object of the files to be Uploaded.
+
+.TP
+
+
+\fBspc ignore \fB[DIR/FILE PATH]
+Removes the particular json object from observed data.
+
+.TP
+
+
+\fBspc en-de \fB[SCHEMA]
+to be completed...
+
+.TP
+
+\fBspc sync \fB[DIR/FILE PATH]
+Uploads the observed files to the server.
+
+.TP
+
+\fBspc status
+Prints the server.
+
+.TP
+
+\fBspc viewUploads
+Prints the directory tree of the uploaded files.
+
+.TP
+
+\fBspc download
+Downloads the file from server to the client.
+
+.TP
+
+
+*****************************************************************
+.SH BUGS
+No known bugs so far.
+
+.SH AUTHOR
+Undefined Variables :)
